@@ -72,7 +72,7 @@ curl -XPOST "http://127.0.0.1:9200/demo-flattened/_update/1" -d'{
     }
 }'
 
-9.
+9.  this search any inner fields but with exact match (even case sensitive)
 
 curl -XGET "http://127.0.0.1:9200/demo-flattened/_search?pretty=true" -d'{
   "query": {
@@ -82,7 +82,7 @@ curl -XGET "http://127.0.0.1:9200/demo-flattened/_search?pretty=true" -d'{
   }
 }'
 
-10.
+10. Thsi search only on a specific field but with exact match (even case sensitive)
 
 curl -XGET "http://127.0.0.1:9200/demo-flattened/_search?pretty=true" -d'{
   "query": {
@@ -92,7 +92,7 @@ curl -XGET "http://127.0.0.1:9200/demo-flattened/_search?pretty=true" -d'{
   }
 }'
 
-11.
+11. No risult any partial match
 
 curl -XGET "http://127.0.0.1:9200/demo-flattened/_search?pretty=true" -d'{
   "query": {
